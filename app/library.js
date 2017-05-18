@@ -8,6 +8,16 @@ module.exports = {
 
 	reverseString: (aString) => {
 
+
+		// check for empty string
+		if(aString === undefined){
+			return "Please enter a String";
+		}
+
+		if(typeof aString === "number"){
+			return "Please enter a string, Help me to Help you, Come on human"
+		}
+
 		// check for the case of an empty string
 		if(aString.length === 0){
 			return null;

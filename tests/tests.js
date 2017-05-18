@@ -44,4 +44,15 @@ describe("Produce the reverse order of a word: ", function() {
 
   });
 
+  describe("Case for improper input arguments", function(){
+
+    it("should throw error message for empty argument", function(){
+      expect(reverseString()).toEqual("Please enter a String");
+    })
+
+    it("should throw error message for number arguments", function(){
+      expect(reverseString(5)).toEqual("Please enter a string, Help me to Help you, Come on human");
+    })
+  })
+
 });
